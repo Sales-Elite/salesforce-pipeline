@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>High_Severity_Comment_Count__c</fullName>
+    <label>High Severity Comment Count</label>
+    <summaryFilterItems>
+        <field>Review_Comment__c.Severity__c</field>
+        <operation>equals</operation>
+        <value>High</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Review_Comment__c.Contract_Review__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>
