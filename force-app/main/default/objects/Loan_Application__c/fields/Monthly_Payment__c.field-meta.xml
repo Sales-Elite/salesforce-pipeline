@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Monthly_Payment__c</fullName>
+    <formula>IF(OR(ISBLANK(Loan_Amount__c), ISBLANK(Term_Months__c), Term_Months__c &lt;= 0), NULL, IF(OR(ISBLANK(Interest_Rate__c), Interest_Rate__c = 0), Loan_Amount__c / Term_Months__c, Loan_Amount__c * (Interest_Rate__c / 12) / (1 - 1 / ((1 + Interest_Rate__c / 12) ^ Term_Months__c))))</formula>
+    <label>Monthly Payment</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>
