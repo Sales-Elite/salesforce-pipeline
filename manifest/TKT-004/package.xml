@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Contract_Review__c.Account__c</members>
+        <members>Contract_Review__c.Contract_Review__c.Account__c</members>
+        <members>Contract_Review__c.Contract_Review__c.Contract_Value__c</members>
+        <members>Contract_Review__c.Contract_Review__c.Due_Date__c</members>
+        <members>Contract_Review__c.Contract_Review__c.High_Severity_Comment_Count__c</members>
+        <members>Contract_Review__c.Contract_Review__c.Is_Overdue__c</members>
+        <members>Contract_Review__c.Contract_Review__c.Reviewer__c</members>
+        <members>Contract_Review__c.Contract_Review__c.Reviewer_Is_Current_User__c</members>
+        <members>Contract_Review__c.Contract_Review__c.Status__c</members>
+        <members>Contract_Review__c.Contract_Value__c</members>
+        <members>Contract_Review__c.Due_Date__c</members>
+        <members>Contract_Review__c.High_Severity_Comment_Count__c</members>
+        <members>Contract_Review__c.Is_Overdue__c</members>
+        <members>Contract_Review__c.Reviewer__c</members>
+        <members>Contract_Review__c.Reviewer_Is_Current_User__c</members>
+        <members>Contract_Review__c.Status__c</members>
+        <members>Review_Comment__c.Comment__c</members>
+        <members>Review_Comment__c.Contract_Review__c</members>
+        <members>Review_Comment__c.Review_Comment__c.Comment__c</members>
+        <members>Review_Comment__c.Review_Comment__c.Contract_Review__c</members>
+        <members>Review_Comment__c.Review_Comment__c.Severity__c</members>
+        <members>Review_Comment__c.Severity__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Contract_Review__c</members>
+        <members>Review_Comment__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Contract_Review__c</members>
+        <members>Review_Comment__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Contract_Review__c-Contract Review Layout</members>
+        <members>Contract_Review__c-Contract_Review__c-Contract Review Layout</members>
+        <members>Review_Comment__c-Review Comment Layout</members>
+        <members>Review_Comment__c-Review_Comment__c-Review Comment Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Contract_Review__c.My_Open_Reviews</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Contract_Reviewer</members>
+        <members>PermissionSetAssignment_insert_1</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>Contract_Review__c.Block_Approval_With_High_Severity</members>
+        <members>Contract_Review__c.Contract_Review__c.Block_Approval_With_High_Severity</members>
+        <name>ValidationRule</name>
+    </types>
+    <version>62.0</version>
+</Package>
