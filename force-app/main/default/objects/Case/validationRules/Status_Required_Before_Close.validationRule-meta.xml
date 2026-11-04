@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Required_Before_Close</fullName>
+    <active>true</active>
+    <description>Stops a Case from being saved (and so from being closed) when its Status has no value.</description>
+    <errorConditionFormula>ISBLANK(TEXT(Status))</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>A Case cannot be closed or saved without a Status. Please select a Status.</errorMessage>
+</ValidationRule>
