@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Account.Account.Contract_Tier__c</members>
+        <members>Account.Contract_Tier__c</members>
+        <members>Vendor_Contract__c.Account__c</members>
+        <members>Vendor_Contract__c.Contract_End_Date__c</members>
+        <members>Vendor_Contract__c.Contract_Value__c</members>
+        <members>Vendor_Contract__c.Vendor_Contract__c.Account__c</members>
+        <members>Vendor_Contract__c.Vendor_Contract__c.Contract_End_Date__c</members>
+        <members>Vendor_Contract__c.Vendor_Contract__c.Contract_Value__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Vendor_Contract</members>
+        <members>Vendor_Contract__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Vendor_Contract_Set_Account_Gold_Tier</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Account-Account Layout</members>
+        <members>Account-Account-Account Layout</members>
+        <members>Vendor_Contract__c-Vendor Contract Layout</members>
+        <members>Vendor_Contract__c-Vendor_Contract__c-Vendor Contract Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>OrgBlazer_TKT_012_Access</members>
+        <members>Vendor_Contract_Access</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>Vendor_Contract__c.Contract_Value_Not_Negative</members>
+        <members>Vendor_Contract__c.Vendor_Contract__c.Contract_Value_Not_Negative</members>
+        <name>ValidationRule</name>
+    </types>
+    <version>62.0</version>
+</Package>
