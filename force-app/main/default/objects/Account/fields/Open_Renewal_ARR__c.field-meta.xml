@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_Renewal_ARR__c</fullName>
+    <description>Total ARR of this Account&apos;s renewals whose Status is not Renewed or Churned (money at stake).</description>
+    <inlineHelpText>Sum of ARR on renewals that are still open (not Renewed or Churned).</inlineHelpText>
+    <label>Open Renewal ARR</label>
+    <summarizedField>Renewal__c.ARR__c</summarizedField>
+    <summaryFilterItems>
+        <field>Renewal__c.Status__c</field>
+        <operation>notEqual</operation>
+        <value>Renewed, Churned</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Renewal__c.Account__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <type>Summary</type>
+</CustomField>
