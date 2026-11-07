@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Bypass_Opportunity_Validation</members>
+        <name>CustomPermission</name>
+    </types>
+    <types>
+        <members>Data_Load_Bypass</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>Opportunity.Require_Next_Step_in_Negotiation</members>
+        <name>ValidationRule</name>
+    </types>
+    <version>62.0</version>
+</Package>
