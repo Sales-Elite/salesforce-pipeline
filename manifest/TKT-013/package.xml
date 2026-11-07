@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Account.Account.Active_Projects__c</members>
+        <members>Account.Active_Projects__c</members>
+        <members>Project__c.Account__c</members>
+        <members>Project__c.Budget__c</members>
+        <members>Project__c.End_Date__c</members>
+        <members>Project__c.Project__c.Account__c</members>
+        <members>Project__c.Project__c.Budget__c</members>
+        <members>Project__c.Project__c.End_Date__c</members>
+        <members>Project__c.Project__c.Start_Date__c</members>
+        <members>Project__c.Project__c.Status__c</members>
+        <members>Project__c.Start_Date__c</members>
+        <members>Project__c.Status__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Project</members>
+        <members>Project__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Project__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Account-Account Layout</members>
+        <members>Account-Account-Account Layout</members>
+        <members>Project__c-Project Layout</members>
+        <members>Project__c-Project__c-Project Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>OrgBlazer_TKT_013_Access</members>
+        <members>Project_Managers</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>Project__c.End_Date_Not_Before_Start_Date</members>
+        <members>Project__c.Project__c.End_Date_Not_Before_Start_Date</members>
+        <name>ValidationRule</name>
+    </types>
+    <version>62.0</version>
+</Package>
