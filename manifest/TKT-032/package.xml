@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>LoanApplicationTriggerHandler</members>
+        <members>LoanApplicationTriggerHandlerTest</members>
+        <members>LoanRiskService</members>
+        <members>LoanRiskServiceTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>LoanApplicationTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>Collateral__c.Estimated_Value__c</members>
+        <members>Loan_Application__c.Amount__c</members>
+        <members>Loan_Application__c.Collateral_Count__c</members>
+        <members>Loan_Application__c.Loan_Purpose__c</members>
+        <members>Loan_Application__c.Risk_Band__c</members>
+        <members>Loan_Application__c.Status__c</members>
+        <members>Loan_Application__c.Total_Estimated_Collateral_Value__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Loan_Application_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Collateral__c-Collateral Layout</members>
+        <members>Loan_Application__c-Loan Application Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Credit_Analyst</members>
+        <members>Loan_Officer</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>Loan_Application__c.Submit_Requires_Collateral_And_Amount</members>
+        <name>ValidationRule</name>
+    </types>
+    <version>62.0</version>
+</Package>
