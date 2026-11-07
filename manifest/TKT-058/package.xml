@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Renewal__c.Renewal_Committed_Req_Decision_Maker</members>
+        <members>Renewal__c.Renewal_Committed_Requires_Fields</members>
+        <name>ValidationRule</name>
+    </types>
+    <version>62.0</version>
+</Package>
