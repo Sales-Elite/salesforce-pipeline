@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Risk_Scoring_Setting__mdt.High_Priority_Case_Values__c</members>
+        <members>Risk_Threshold__mdt.Days_Since_Last_Activity__c</members>
+        <members>Risk_Threshold__mdt.Evaluation_Order__c</members>
+        <members>Risk_Threshold__mdt.Open_High_Priority_Cases__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Risk_Scoring_Setting.Default</members>
+        <members>Risk_Threshold.High</members>
+        <members>Risk_Threshold.Low</members>
+        <members>Risk_Threshold.Medium</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
+        <members>Risk_Scoring_Setting__mdt</members>
+        <members>Risk_Threshold__mdt</members>
+        <name>CustomObject</name>
+    </types>
+    <version>62.0</version>
+</Package>

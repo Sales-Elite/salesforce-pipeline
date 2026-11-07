@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_High_Priority_Cases__c</fullName>
+    <description>Minimum number of open High-priority Cases on the renewal&apos;s Account for this Risk Level to apply.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Min Open High-Priority Cases</label>
+    <precision>4</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>
