@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>E2E_Score_Not_Negative</fullName>
+    <active>true</active>
+    <description>Blocks saving an Account when E2E Score is below 0.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(E2E_Score__c)), E2E_Score__c &lt; 0)</errorConditionFormula>
+    <errorDisplayField>E2E_Score__c</errorDisplayField>
+    <errorMessage>E2E Score cannot be negative.</errorMessage>
+</ValidationRule>
