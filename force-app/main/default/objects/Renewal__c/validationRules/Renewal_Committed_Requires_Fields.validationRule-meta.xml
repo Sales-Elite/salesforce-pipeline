@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Renewal_Committed_Requires_Fields</fullName>
+    <active>true</active>
+    <description>Blocks setting a Renewal to Committed when ARR is empty (REQ-005, ST-06).</description>
+    <errorConditionFormula>AND(ISPICKVAL(Status__c, &quot;Committed&quot;), ISBLANK(ARR__c))</errorConditionFormula>
+    <errorDisplayField>ARR__c</errorDisplayField>
+    <errorMessage>ARR is required before a renewal can be set to Committed.</errorMessage>
+</ValidationRule>

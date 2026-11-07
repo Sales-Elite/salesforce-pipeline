@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Renewal_Committed_Req_Decision_Maker</fullName>
+    <active>true</active>
+    <description>Blocks setting a Renewal to Committed when Decision Maker is empty (REQ-005, ST-06).</description>
+    <errorConditionFormula>AND(ISPICKVAL(Status__c, &quot;Committed&quot;), ISBLANK(Decision_Maker__c))</errorConditionFormula>
+    <errorDisplayField>Decision_Maker__c</errorDisplayField>
+    <errorMessage>Decision Maker is required before a renewal can be set to Committed.</errorMessage>
+</ValidationRule>
