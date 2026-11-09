@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ST05_Requested_Discount__c</fullName>
+    <description>The discount percent being requested. The ST05 approval process uses it to decide entry (&gt;10%) and the finance step (&gt;25%).</description>
+    <label>Requested Discount</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

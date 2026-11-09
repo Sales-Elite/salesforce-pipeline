@@ -1,0 +1,1 @@
+Opportunity {!Opportunity.Name}, amount {!Opportunity.Amount}, requested discount {!Opportunity.ST05_Requested_Discount__c}%.
