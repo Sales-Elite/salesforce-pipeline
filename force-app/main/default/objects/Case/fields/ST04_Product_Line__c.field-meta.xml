@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ST04_Product_Line__c</fullName>
+    <description>Product line used by ST04 Routing assignment rule.</description>
+    <label>ST04 Product Line</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Payments</fullName>
+                <default>false</default>
+                <label>Payments</label>
+            </value>
+            <value>
+                <fullName>Lending</fullName>
+                <default>false</default>
+                <label>Lending</label>
+            </value>
+            <value>
+                <fullName>Wealth</fullName>
+                <default>false</default>
+                <label>Wealth</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
