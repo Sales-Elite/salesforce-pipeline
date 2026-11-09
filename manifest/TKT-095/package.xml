@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>ST49_Onboarding_Step__c.ST49_Account__c</members>
+        <members>ST49_Onboarding_Step__c.ST49_Done__c</members>
+        <members>ST49_Onboarding_Step__c.ST49_Order__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>ST49_Onboarding_Step</members>
+        <members>ST49_Onboarding_Step__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Account_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>st49OnboardingProgress</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>OrgBlazer_TKT_095_Access</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>62.0</version>
+</Package>
