@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT2_Close_Check</fullName>
+    <active>true</active>
+    <description>Stops a case from being closed while Type is blank. Status always has a value, so the rule checks Type, as the user asked.</description>
+    <errorConditionFormula>AND(IsClosed, ISBLANK(TEXT(Type)))</errorConditionFormula>
+    <errorDisplayField>Type</errorDisplayField>
+    <errorMessage>Select a Type before closing this case.</errorMessage>
+</ValidationRule>
