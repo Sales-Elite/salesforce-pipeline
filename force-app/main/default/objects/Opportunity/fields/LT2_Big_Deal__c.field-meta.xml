@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT2_Big_Deal__c</fullName>
+    <description>Checked when the Opportunity Amount is over 100,000. Formula field (no Apex) so admins can maintain it.</description>
+    <formula>Amount &gt; 100000</formula>
+    <inlineHelpText>Automatically checked when Amount is greater than 100,000.</inlineHelpText>
+    <label>LT2 Big Deal</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
