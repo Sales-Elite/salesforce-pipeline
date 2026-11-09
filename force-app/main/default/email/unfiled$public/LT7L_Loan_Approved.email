@@ -1,0 +1,7 @@
+Dear {!LT7L_Loan_Application__c.OwnerFullName},
+
+Your loan application was approved.
+
+Application: {!LT7L_Loan_Application__c.Name}
+Amount: {!LT7L_Loan_Application__c.LT7L_Amount__c}
+Term (Months): {!LT7L_Loan_Application__c.LT7L_Term_Months__c}

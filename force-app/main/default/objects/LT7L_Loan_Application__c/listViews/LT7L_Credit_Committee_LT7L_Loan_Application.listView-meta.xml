@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT7L_Credit_Committee_LT7L_Loan_Application</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Credit Committee</label>
+    <queue>LT7L_Credit_Committee</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>
