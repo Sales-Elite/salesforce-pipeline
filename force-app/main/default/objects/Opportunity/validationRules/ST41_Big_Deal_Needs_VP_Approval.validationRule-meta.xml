@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ST41_Big_Deal_Needs_VP_Approval</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( Amount &gt;= 250000, ISPICKVAL(StageName, &quot;Negotiation/Review&quot;), ISCHANGED(StageName), NOT(ISPICKVAL(ST41_VP_Approval_Status__c, &quot;Approved&quot;)) )</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Deals of 250,000 or more need ST41 VP Sales approval before moving to Negotiation/Review. Submit the opportunity for approval first.</errorMessage>
+</ValidationRule>
