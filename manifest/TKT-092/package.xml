@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>ST50_Membership__c.ST50_Contact__c</members>
+        <members>ST50_Membership__c.ST50_Level__c</members>
+        <members>ST50_Membership__c.ST50_Renewal_Date__c</members>
+        <members>ST50_Membership__c.ST50_Status__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>ST50_Membership</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>ST50_Membership_Renewal_Reminder</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>ST50_Membership__c-ST50 Membership Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>OrgBlazer_TKT_092_Access</members>
+        <members>ST50_Membership_Access</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>62.0</version>
+</Package>
