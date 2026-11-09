@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>LT3V_Vendor_Contract__c.LT3V_Account__c</members>
+        <members>LT3V_Vendor_Contract__c.LT3V_Contract_Value__c</members>
+        <members>LT3V_Vendor_Contract__c.LT3V_Start_Date__c</members>
+        <members>LT3V_Vendor_Contract__c.LT3V_Status__c</members>
+        <members>LT3V_Vendor_Contract__c.LT3V_Vendor_Contract__c-LT3V Vendor Contract Layout</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>LT3V_Vendor_Contract__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>OrgBlazer_TKT_121_Access</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>62.0</version>
+</Package>
