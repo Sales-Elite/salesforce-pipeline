@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>ST01_Collateral__c.ST01_Estimated_Value__c</members>
+        <members>ST01_Collateral__c.ST01_Haircut__c</members>
+        <members>ST01_Collateral__c.ST01_Loan__c</members>
+        <members>ST01_Collateral__c.ST01_Type__c</members>
+        <members>ST01_Guarantor__c.ST01_Contact__c</members>
+        <members>ST01_Guarantor__c.ST01_Guarantee__c</members>
+        <members>ST01_Guarantor__c.ST01_Loan__c</members>
+        <members>ST01_Loan__c.ST01_Account__c</members>
+        <members>ST01_Loan__c.ST01_Amount__c</members>
+        <members>ST01_Loan__c.ST01_Collateral_Count__c</members>
+        <members>ST01_Loan__c.ST01_Interest_Rate__c</members>
+        <members>ST01_Loan__c.ST01_Loan_to_Value__c</members>
+        <members>ST01_Loan__c.ST01_Purpose__c</members>
+        <members>ST01_Loan__c.ST01_Status__c</members>
+        <members>ST01_Loan__c.ST01_Term_in_Months__c</members>
+        <members>ST01_Loan__c.ST01_Total_Collateral_Value__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>ST01_Collateral__c</members>
+        <members>ST01_Guarantor__c</members>
+        <members>ST01_Loan__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>ST01_Bypass_Loan_Validation</members>
+        <name>CustomPermission</name>
+    </types>
+    <types>
+        <members>ST01_Loan__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>ST01_Loan_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Account-Account Layout</members>
+        <members>Account-Account-Account Layout</members>
+        <members>ST01_Collateral__c-ST01_Collateral__c-ST01 Collateral Layout</members>
+        <members>ST01_Collateral__c-ST01_Collateral__c:insert:1</members>
+        <members>ST01_Guarantor__c-ST01 Guarantor Layout</members>
+        <members>ST01_Guarantor__c-ST01_Guarantor__c-ST01 Guarantor Layout</members>
+        <members>ST01_Loan__c-ST01 Loan Layout</members>
+        <members>ST01_Loan__c-ST01 Revolving Line Layout</members>
+        <members>ST01_Loan__c-ST01_Loan__c-ST01 Loan Layout</members>
+        <members>ST01_Loan__c-ST01_Loan__c-ST01 Revolving Line Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>OrgBlazer_TKT_084_Access</members>
+        <members>ST01_Loan_Officer</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>ST01_Loan__c.ST01_Revolving_Line</members>
+        <members>ST01_Loan__c.ST01_Term_Loan</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>ST01_Loan__c.ST01_Submit_Requires_Collateral_And_Amount</members>
+        <members>ST01_Loan__c.ST01_Submit_Requires_Collateral_And_Amt</members>
+        <name>ValidationRule</name>
+    </types>
+    <version>62.0</version>
+</Package>

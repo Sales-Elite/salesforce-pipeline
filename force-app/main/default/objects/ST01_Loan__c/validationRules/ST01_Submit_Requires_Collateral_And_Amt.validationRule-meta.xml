@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ST01_Submit_Requires_Collateral_And_Amt</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT($Permission.ST01_Bypass_Loan_Validation), ISPICKVAL(ST01_Status__c, &quot;Submitted&quot;), OR(ISNEW(), ISCHANGED(ST01_Status__c)), OR(BLANKVALUE(ST01_Collateral_Count__c, 0) &lt; 1, BLANKVALUE(ST01_Amount__c, 0) &lt;= 0))</errorConditionFormula>
+    <errorDisplayField>ST01_Status__c</errorDisplayField>
+    <errorMessage>A loan cannot move to Submitted unless it has at least one collateral record and an Amount greater than 0.</errorMessage>
+</ValidationRule>

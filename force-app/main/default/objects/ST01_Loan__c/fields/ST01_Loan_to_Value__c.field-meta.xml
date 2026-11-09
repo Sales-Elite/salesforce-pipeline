@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ST01_Loan_to_Value__c</fullName>
+    <formula>IF(AND(NOT(ISBLANK(ST01_Total_Collateral_Value__c)), ST01_Total_Collateral_Value__c &gt; 0), ST01_Amount__c / ST01_Total_Collateral_Value__c, NULL)</formula>
+    <label>Loan-to-Value %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>
