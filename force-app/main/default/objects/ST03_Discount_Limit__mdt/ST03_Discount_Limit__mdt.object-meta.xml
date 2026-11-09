@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Max Opportunity discount per sales region (ST03). Row with Region DEFAULT applies when an Opportunity has no region.</description>
+    <label>ST03 Discount Limit</label>
+    <pluralLabel>ST03 Discount Limits</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

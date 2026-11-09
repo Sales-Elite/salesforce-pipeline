@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>ST03_OpportunityTriggerHandler</members>
+        <members>ST03_OpportunityTriggerHandlerTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>ST03_OpportunityTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>Opportunity.ST03_Discount__c</members>
+        <members>Opportunity.ST03_Region__c</members>
+        <members>ST03_Discount_Limit__mdt.ST03_Max_Discount__c</members>
+        <members>ST03_Discount_Limit__mdt.ST03_Region__c</members>
+        <members>ST03_Discount_Limit__mdt.ST03_Requires_Finance__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>ST03_Discount_Limit.ST03_AMER</members>
+        <members>ST03_Discount_Limit.ST03_APAC</members>
+        <members>ST03_Discount_Limit.ST03_DEFAULT</members>
+        <members>ST03_Discount_Limit.ST03_EMEA</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
+        <members>ST03_Discount_Limit__mdt</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Opportunity-Opportunity Layout</members>
+        <members>Opportunity-Opportunity-Opportunity Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>OrgBlazer_TKT_086_Access</members>
+        <members>ST03_Discount_Guard_Access</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>62.0</version>
+</Package>
