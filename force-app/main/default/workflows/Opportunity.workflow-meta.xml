@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>ST41_Set_VP_Approval_Approved</fullName>
+        <field>ST41_VP_Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>ST41 Set VP Approval Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ST41_Set_VP_Approval_Not_Submitted</fullName>
+        <field>ST41_VP_Approval_Status__c</field>
+        <literalValue>Not Submitted</literalValue>
+        <name>ST41 Set VP Approval Not Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ST41_Set_VP_Approval_Pending</fullName>
+        <field>ST41_VP_Approval_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>ST41 Set VP Approval Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ST41_Set_VP_Approval_Rejected</fullName>
+        <field>ST41_VP_Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>ST41 Set VP Approval Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>
