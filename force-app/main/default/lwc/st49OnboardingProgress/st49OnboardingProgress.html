@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Onboarding Progress" icon-name="standard:task">
+        <div class="slds-p-horizontal_medium">
+            <template if:true={hasSteps}>
+                <p class="slds-m-bottom_x-small">{doneCount} of {total} steps done</p>
+                <lightning-progress-bar value={percent}></lightning-progress-bar>
+                <p class="slds-m-top_x-small">
+                    <template if:true={nextName}>Next step: {nextName}</template>
+                    <template if:false={nextName}>All steps done</template>
+                </p>
+            </template>
+            <template if:false={hasSteps}>No onboarding steps yet</template>
+        </div>
+    </lightning-card>
+</template>
