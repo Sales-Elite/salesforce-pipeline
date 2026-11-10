@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Contact.Contact-Contact %28Sales%29 Layout</members>
+        <members>Contact.LT13_Contact_Note__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>OrgBlazer_TKT_209_Access</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>62.0</version>
+</Package>
