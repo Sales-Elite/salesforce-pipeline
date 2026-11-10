@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Opportunity.LT11C_E__c</members>
+        <members>Opportunity.LT11C_F__c</members>
+        <members>Opportunity.LT11C_G__c</members>
+        <members>Opportunity.LT11C_H__c</members>
+        <members>Opportunity.LT11C_I__c</members>
+        <members>Opportunity.LT11C_J__c</members>
+        <members>Opportunity.LT11C_K__c</members>
+        <members>Opportunity.LT11C_L__c</members>
+        <name>CustomField</name>
+    </types>
+    <version>62.0</version>
+</Package>
