@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT6_Next_Step_Date_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(LT6_Needs_Next_Step__c, ISBLANK(LT6_Next_Step_Date__c))</errorConditionFormula>
+    <errorDisplayField>LT6_Next_Step_Date__c</errorDisplayField>
+    <errorMessage>Pick a next-step date when the opportunity needs a next step.</errorMessage>
+</ValidationRule>
