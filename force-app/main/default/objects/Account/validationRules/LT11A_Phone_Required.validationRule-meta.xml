@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT11A_Phone_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(BEGINS(Name, &quot;LT11A&quot;), ISBLANK(Phone))</errorConditionFormula>
+    <errorDisplayField>Phone</errorDisplayField>
+    <errorMessage>Phone is required when the Account Name starts with LT11A.</errorMessage>
+</ValidationRule>
