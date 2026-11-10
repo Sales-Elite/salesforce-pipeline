@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants read access to Account.LT6_Note__c (LT12).</description>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.LT6_Note__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>LT12 Release Access</label>
+</PermissionSet>
