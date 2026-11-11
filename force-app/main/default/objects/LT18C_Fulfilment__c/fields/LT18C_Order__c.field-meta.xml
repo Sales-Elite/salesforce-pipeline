@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT18C_Order__c</fullName>
+    <label>LT18C Order</label>
+    <referenceTo>LT18C_Order__c</referenceTo>
+    <relationshipLabel>LT18C Fulfilments</relationshipLabel>
+    <relationshipName>LT18C_Fulfilments</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>
