@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT15B_Req_Required</fullName>
+    <active>true</active>
+    <description>Blocks saving a Contact when LT15B_Req__c is blank (ticket LT15B).</description>
+    <errorConditionFormula>ISBLANK(LT15B_Req__c)</errorConditionFormula>
+    <errorDisplayField>LT15B_Req__c</errorDisplayField>
+    <errorMessage>LT15B Req is required. Please enter a value before saving the Contact.</errorMessage>
+</ValidationRule>
