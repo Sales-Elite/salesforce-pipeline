@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT17A_Gate_Required</fullName>
+    <active>true</active>
+    <description>LT17A: blocks saving a Contact whose First or Last Name contains LT17A while LT17A Gate is blank.</description>
+    <errorConditionFormula>AND(
+  ISBLANK(LT17A_Gate__c),
+  OR(
+    CONTAINS(FirstName, &quot;LT17A&quot;),
+    CONTAINS(LastName, &quot;LT17A&quot;)
+  )
+)</errorConditionFormula>
+    <errorDisplayField>LT17A_Gate__c</errorDisplayField>
+    <errorMessage>LT17A Gate is required when the first or last name contains LT17A.</errorMessage>
+</ValidationRule>
