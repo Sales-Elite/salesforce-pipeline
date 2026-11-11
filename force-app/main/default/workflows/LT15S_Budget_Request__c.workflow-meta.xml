@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>LT15S_Set_Status_Approved</fullName>
+        <field>LT15S_Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>LT15S Set Status Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LT15S_Set_Status_Draft</fullName>
+        <field>LT15S_Approval_Status__c</field>
+        <literalValue>Draft</literalValue>
+        <name>LT15S Set Status Draft</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LT15S_Set_Status_Pending</fullName>
+        <field>LT15S_Approval_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>LT15S Set Status Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LT15S_Set_Status_Rejected</fullName>
+        <field>LT15S_Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>LT15S Set Status Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>
