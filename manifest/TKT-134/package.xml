@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>LT6S_Loan_Application__c.LT6S_Account__c</members>
+        <members>LT6S_Loan_Application__c.LT6S_Amount__c</members>
+        <members>LT6S_Loan_Application__c.LT6S_Purpose__c</members>
+        <members>LT6S_Loan_Application__c.LT6S_Status__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>LT6S_Loan_Application</members>
+        <members>LT6S_Loan_Application__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>LT6S_Loan_Application__c-Loan Application Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>OrgBlazer_TKT_134_Access</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>62.0</version>
+</Package>
