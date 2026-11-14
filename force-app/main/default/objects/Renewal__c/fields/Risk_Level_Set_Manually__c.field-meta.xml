@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Risk_Level_Set_Manually__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Ticked by a CSM who set Risk Level by hand. The nightly RenewalRiskScoringBatch leaves Risk Level alone on renewals with this ticked (client question Q3).</description>
+    <inlineHelpText>Tick this to stop the nightly risk job from overwriting the Risk Level you set.</inlineHelpText>
+    <label>Risk Level Set Manually</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
