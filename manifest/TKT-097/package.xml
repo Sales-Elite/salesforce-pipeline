@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>ST47_Lease__c.ST47_Account__c</members>
+        <members>ST47_Lease__c.ST47_End_Date__c</members>
+        <members>ST47_Lease__c.ST47_Monthly_Payment__c</members>
+        <members>ST47_Lease__c.ST47_Residual__c</members>
+        <members>ST47_Lease__c.ST47_Start_Date__c</members>
+        <members>ST47_Lease__c.ST47_Status__c</members>
+        <members>ST47_Lease__c.ST47_Total_Asset_Value__c</members>
+        <members>ST47_Leased_Asset__c.ST47_Lease__c</members>
+        <members>ST47_Leased_Asset__c.ST47_Model__c</members>
+        <members>ST47_Leased_Asset__c.ST47_Serial_Number__c</members>
+        <members>ST47_Leased_Asset__c.ST47_Value__c</members>
+        <members>ST47_Payment__c.ST47_Amount__c</members>
+        <members>ST47_Payment__c.ST47_Days_Late__c</members>
+        <members>ST47_Payment__c.ST47_Due_Date__c</members>
+        <members>ST47_Payment__c.ST47_Lease__c</members>
+        <members>ST47_Payment__c.ST47_Paid__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>ST47_Lease</members>
+        <members>ST47_Lease__c</members>
+        <members>ST47_Leased_Asset</members>
+        <members>ST47_Leased_Asset__c</members>
+        <members>ST47_Payment</members>
+        <members>ST47_Payment__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Account-Account Layout</members>
+        <members>ST47_Lease__c-ST47 Lease Layout</members>
+        <members>ST47_Lease__c-ST47_Lease__c-ST47 Lease Layout</members>
+        <members>ST47_Leased_Asset__c-ST47 Leased Asset Layout</members>
+        <members>ST47_Leased_Asset__c-ST47_Leased_Asset__c-ST47 Leased Asset Layout</members>
+        <members>ST47_Payment__c-ST47 Payment Layout</members>
+        <members>ST47_Payment__c-ST47_Payment__c-ST47 Payment Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Delivered_Field_Access</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>ST47_Lease__c.Finance</members>
+        <members>ST47_Lease__c.Operating</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>ST47_Lease__c.ST47_End_After_Start</members>
+        <members>ST47_Lease__c.ST47_Finance_Requires_Residual</members>
+        <members>ST47_Lease__c.ST47_Monthly_Payment_Positive</members>
+        <name>ValidationRule</name>
+    </types>
+    <version>62.0</version>
+</Package>
