@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operating</fullName>
+    <active>true</active>
+    <label>Operating</label>
+    <picklistValues>
+        <picklist>ST47_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defaulted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

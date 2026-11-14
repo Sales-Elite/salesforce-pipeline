@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ST47_Finance_Requires_Residual</fullName>
+    <active>true</active>
+    <errorConditionFormula>$RecordType.DeveloperName = &apos;Finance&apos; &amp;&amp; ISBLANK(ST47_Residual__c)</errorConditionFormula>
+    <errorDisplayField>ST47_Residual__c</errorDisplayField>
+    <errorMessage>Finance leases require a Residual Value.</errorMessage>
+</ValidationRule>

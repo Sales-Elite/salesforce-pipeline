@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ST47_Total_Asset_Value__c</fullName>
+    <label>Total Asset Value</label>
+    <summarizedField>ST47_Leased_Asset__c.ST47_Value__c</summarizedField>
+    <summaryForeignKey>ST47_Leased_Asset__c.ST47_Lease__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>
