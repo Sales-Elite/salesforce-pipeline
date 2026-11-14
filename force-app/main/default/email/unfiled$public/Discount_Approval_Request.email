@@ -1,0 +1,1 @@
+<html><head></head><body><p>Discount approval requested for {{{Opportunity.Name}}}.</p><p>Amount: {{{Opportunity.Amount}}}<br />Discount %: {{{Opportunity.Discount_Percent__c}}}<br />Net Amount: {{{Opportunity.Net_Amount__c}}}<br />Reason: {{{Opportunity.Discount_Reason__c}}}<br />Justification: {{{Opportunity.Discount_Justification__c}}}</p></body></html>

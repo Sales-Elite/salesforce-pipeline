@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Block_Closed_Won_Unapproved_Discount</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL(StageName, &quot;Closed Won&quot;), OR( ISNEW(), ISCHANGED(StageName) ), OR( ISPICKVAL(Discount_Status__c, &quot;Pending&quot;), ISPICKVAL(Discount_Status__c, &quot;Rejected&quot;) ) )</errorConditionFormula>
+    <errorMessage>An Opportunity cannot move to Closed Won while Discount Status is Pending or Rejected.</errorMessage>
+</ValidationRule>
