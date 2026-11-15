@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT5_Close_Check</fullName>
+    <active>true</active>
+    <description>Stops a case from being closed while Priority is blank. (Status always has a value, so the user chose Priority as the field to check.)</description>
+    <errorConditionFormula>AND(IsClosed, ISBLANK(TEXT(Priority)))</errorConditionFormula>
+    <errorDisplayField>Priority</errorDisplayField>
+    <errorMessage>Set a Priority before closing this case.</errorMessage>
+</ValidationRule>

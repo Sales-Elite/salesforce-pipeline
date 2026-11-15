@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ST05_Finance_Approvers_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>ST05 Finance Approvers</label>
+    <queue>ST05_Finance_Approvers</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

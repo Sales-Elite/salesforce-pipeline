@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Escalation_Reason</fullName>
+    <active>true</active>
+    <description>ST-13 / REQ-014, REQ-015: an Escalation Reason is required when a case becomes escalated. Only fires when IsEscalated changes to true (or a case is created escalated), so cases escalated before go-live can still be edited without a reason.</description>
+    <errorConditionFormula>AND(
+  IsEscalated,
+  OR(ISNEW(), ISCHANGED(IsEscalated)),
+  ISBLANK(TEXT(Escalation_Reason__c))
+)</errorConditionFormula>
+    <errorDisplayField>Escalation_Reason__c</errorDisplayField>
+    <errorMessage>Please select an Escalation Reason when escalating a case.</errorMessage>
+</ValidationRule>

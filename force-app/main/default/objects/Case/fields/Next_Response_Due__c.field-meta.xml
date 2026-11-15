@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Next_Response_Due__c</fullName>
+    <description>Target date/time of the case&apos;s open (not completed) milestone that is due soonest. Set by automation.</description>
+    <inlineHelpText>When the next response is due under the case&apos;s entitlement. Set automatically.</inlineHelpText>
+    <label>Next Response Due</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

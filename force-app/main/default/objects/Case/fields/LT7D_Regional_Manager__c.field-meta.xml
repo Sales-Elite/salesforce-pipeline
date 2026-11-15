@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT7D_Regional_Manager__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The case owner&apos;s manager (User.ManagerId), set automatically by the LT7D_Case_Before_Save flow.</description>
+    <label>LT7D Regional Manager</label>
+    <referenceTo>User</referenceTo>
+    <relationshipLabel>Cases</relationshipLabel>
+    <relationshipName>LT7D_Regional_Manager_Cases</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
