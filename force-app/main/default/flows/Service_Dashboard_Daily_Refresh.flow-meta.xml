@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Refresh_Dashboard</name>
+        <label>Refresh Dashboard</label>
+        <locationX>176</locationX>
+        <locationY>1334</locationY>
+        <actionName>ServiceDashboardRefresh</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>dashboardDeveloperNames</name>
+            <value>
+                <stringValue>Service_Manager_Overview</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>ServiceDashboardRefresh</nameSegment>
+    </actionCalls>
+    <apiVersion>62.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Service Dashboard Daily Refresh {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Service Dashboard Daily Refresh</label>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Refresh_Dashboard</targetReference>
+        </connector>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2026-11-16</startDate>
+            <startTime>06:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
