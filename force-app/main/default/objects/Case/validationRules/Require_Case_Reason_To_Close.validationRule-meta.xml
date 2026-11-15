@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Case_Reason_To_Close</fullName>
+    <active>true</active>
+    <description>Blocks closing a Case while Case Reason is empty.</description>
+    <errorConditionFormula>AND(
+  OR(IsClosed, ISPICKVAL(Status, &quot;Closed&quot;)),
+  ISBLANK(TEXT(Reason))
+)</errorConditionFormula>
+    <errorDisplayField>Reason</errorDisplayField>
+    <errorMessage>Enter a Case Reason before closing this case.</errorMessage>
+</ValidationRule>

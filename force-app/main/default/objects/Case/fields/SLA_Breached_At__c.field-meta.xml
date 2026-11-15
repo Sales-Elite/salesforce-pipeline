@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SLA_Breached_At__c</fullName>
+    <description>Stamped by the Standard Case entitlement process&apos;s milestone violation action each time a milestone is breached; drives the team-lead breach alert flow.</description>
+    <inlineHelpText>When this case last breached one of its service-level milestones.</inlineHelpText>
+    <label>SLA Breached At</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

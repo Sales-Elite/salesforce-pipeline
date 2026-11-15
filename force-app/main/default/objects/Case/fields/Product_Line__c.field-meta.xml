@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Line__c</fullName>
+    <description>Product line of the case; drives routing to the matching product line queue (ST-05 / REQ-004).</description>
+    <label>Product Line</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Appliances</fullName>
+                <default>false</default>
+                <label>Appliances</label>
+            </value>
+            <value>
+                <fullName>Spares</fullName>
+                <default>false</default>
+                <label>Spares</label>
+            </value>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
