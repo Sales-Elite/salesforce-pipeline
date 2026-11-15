@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Customer_Reply__c</fullName>
+    <description>Date and time of the latest inbound customer email on the case. The seven-day waiting-on-customer clock is measured from this value (ST-11 / REQ-013).</description>
+    <inlineHelpText>Set automatically when the customer emails in on this case.</inlineHelpText>
+    <label>Last Customer Reply</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

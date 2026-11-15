@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <customErrors>
+        <description>Fault path: tells the user which automation failed and why, instead of an unhandled-fault error.</description>
+        <name>Fault_Handler</name>
+        <label>Show why it failed</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <customErrorMessages>
+            <errorMessage>EmailMessage - Customer Reply Restarts Wait could not finish, so this save was not completed. Reason: {!$Flow.FaultMessage} Ask your Salesforce admin if this keeps happening.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <name>Check_Waiting</name>
+        <label>Is Case Waiting</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <defaultConnector>
+            <targetReference>Update_Reply_Only</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Waiting</defaultConnectorLabel>
+        <rules>
+            <name>Is_Waiting</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Waiting on Customer</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Reply_And_Status</targetReference>
+            </connector>
+            <label>Waiting on Customer</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>formula_ReplyTime</name>
+        <dataType>DateTime</dataType>
+        <expression>IF(ISBLANK({!$Record.MessageDate}), NOW(), {!$Record.MessageDate})</expression>
+    </formulas>
+    <interviewLabel>EmailMessage - Customer Reply Restarts Wait {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>EmailMessage - Customer Reply Restarts Wait</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Case</name>
+        <label>Get Case</label>
+        <locationX>176</locationX>
+        <locationY>534</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Waiting</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ParentId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Status</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Reply_And_Status</name>
+        <label>Update Reply And Status</label>
+        <locationX>176</locationX>
+        <locationY>734</locationY>
+        <faultConnector>
+            <targetReference>Fault_Handler</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ParentId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Last_Customer_Reply__c</field>
+            <value>
+                <elementReference>formula_ReplyTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Working</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Reply_Only</name>
+        <label>Update Reply Only</label>
+        <locationX>376</locationX>
+        <locationY>784</locationY>
+        <faultConnector>
+            <targetReference>Fault_Handler</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ParentId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Last_Customer_Reply__c</field>
+            <value>
+                <elementReference>formula_ReplyTime</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Case</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Incoming</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>EmailMessage</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
