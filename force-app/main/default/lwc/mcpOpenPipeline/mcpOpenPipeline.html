@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Open Pipeline" icon-name="standard:opportunity">
+        <div class="slds-p-horizontal_medium">
+            <template lwc:if={error}>
+                <p class="slds-text-color_error">{error}</p>
+            </template>
+            <template lwc:elseif={hasRows}>
+                <p class="slds-m-bottom_small">
+                    <strong>{count}</strong> opportunities · Total:
+                    <lightning-formatted-number value={total} format-style="currency"></lightning-formatted-number>
+                </p>
+                <lightning-datatable key-field="Id" data={rows} columns={columns} hide-checkbox-column></lightning-datatable>
+            </template>
+            <template lwc:elseif={loaded}>
+                <p>No open opportunities.</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
