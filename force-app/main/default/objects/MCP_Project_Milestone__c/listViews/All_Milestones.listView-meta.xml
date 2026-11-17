@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Milestones</fullName>
+    <columns>NAME</columns>
+    <columns>MCP_Opportunity__c</columns>
+    <columns>MCP_Status__c</columns>
+    <columns>MCP_Due_Date__c</columns>
+    <columns>MCP_Weight__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Milestones</label>
+</ListView>
