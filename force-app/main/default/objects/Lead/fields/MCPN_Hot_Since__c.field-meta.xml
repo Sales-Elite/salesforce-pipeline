@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MCPN_Hot_Since__c</fullName>
+    <description>When the Lead&apos;s Rating last became Hot. Set and cleared by the MCPN Hot Lead Follow Up flow.</description>
+    <label>MCPN Hot Since</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>DateTime</type>
+</CustomField>
