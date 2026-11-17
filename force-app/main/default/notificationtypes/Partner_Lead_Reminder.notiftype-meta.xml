@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomNotificationType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customNotifTypeName>Partner_Lead_Reminder</customNotifTypeName>
+    <description>In-app reminder to Partner Leads queue members when a partner lead is still unassigned after 4 hours.</description>
+    <desktop>true</desktop>
+    <masterLabel>Partner Lead Reminder</masterLabel>
+    <mobile>true</mobile>
+    <slack>false</slack>
+</CustomNotificationType>
