@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LT19B_Title_Required</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISBLANK(Title)</errorConditionFormula>
+    <errorMessage>Title is required. Please enter a Title before saving this Contact.</errorMessage>
+</ValidationRule>
