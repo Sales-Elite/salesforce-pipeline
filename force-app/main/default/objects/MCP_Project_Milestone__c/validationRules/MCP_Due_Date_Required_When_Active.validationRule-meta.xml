@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MCP_Due_Date_Required_When_Active</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISBLANK( MCP_Due_Date__c ), OR( ISPICKVAL( MCP_Status__c, &quot;In Progress&quot; ), ISPICKVAL( MCP_Status__c, &quot;Blocked&quot; ) ) )</errorConditionFormula>
+    <errorDisplayField>MCP_Due_Date__c</errorDisplayField>
+    <errorMessage>Due Date is required when Status is In Progress or Blocked.</errorMessage>
+</ValidationRule>

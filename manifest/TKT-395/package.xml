@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>MCP_Project_Milestone__c.MCP_Due_Date__c</members>
+        <members>MCP_Project_Milestone__c.MCP_Opportunity__c</members>
+        <members>MCP_Project_Milestone__c.MCP_Owner_Notes__c</members>
+        <members>MCP_Project_Milestone__c.MCP_Status__c</members>
+        <members>MCP_Project_Milestone__c.MCP_Weight__c</members>
+        <members>Opportunity.MCP_Milestone_Progress__c</members>
+        <members>Opportunity.MCP_Milestones_Done__c</members>
+        <members>Opportunity.MCP_Milestones_Total__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>MCP_Project_Milestone</members>
+        <members>MCP_Project_Milestone__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>MCP_Project_Milestone__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>MCP_Project_Milestone__c-MCP_Project_Milestone__c-Project Milestone Layout</members>
+        <members>MCP_Project_Milestone__c-Project Milestone Layout</members>
+        <members>Opportunity-Opportunity Layout</members>
+        <members>Opportunity-Opportunity-Opportunity Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>MCP_Project_Milestone__c.All_Milestones</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>MCP_Milestone_Manager</members>
+        <members>OrgBlazer_TKT_395_Access</members>
+        <members>OrgBlazer_TKT_395_Read_Access</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>MCP_Project_Milestone__c.MCP_Due_Date_Required_When_Active</members>
+        <name>ValidationRule</name>
+    </types>
+    <version>62.0</version>
+</Package>
