@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <assignments>
+        <name>Set_Next_Step</name>
+        <label>Set Next Step</label>
+        <locationX>176</locationX>
+        <locationY>334</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.NextStep</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Loss interview</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <environments>Default</environments>
+    <interviewLabel>N4 Loss Interview {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>N4 Loss Interview</label>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Next_Step</targetReference>
+        </connector>
+        <filterFormula>AND(ISCHANGED({!$Record.StageName}), TEXT({!$Record.StageName}) = &apos;Closed Lost&apos;, {!$Record.Amount} &gt;= 50000)</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
