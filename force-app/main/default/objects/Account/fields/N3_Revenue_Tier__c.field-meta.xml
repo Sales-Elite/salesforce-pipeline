@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>N3_Revenue_Tier__c</fullName>
+    <description>Revenue tier derived from Annual Revenue: Enterprise &gt;= 1,000,000; Mid-Market &gt;= 100,000; otherwise SMB.</description>
+    <externalId>false</externalId>
+    <formula>IF(AnnualRevenue &gt;= 1000000, &quot;Enterprise&quot;, IF(AnnualRevenue &gt;= 100000, &quot;Mid-Market&quot;, &quot;SMB&quot;))</formula>
+    <label>N3 Revenue Tier</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
