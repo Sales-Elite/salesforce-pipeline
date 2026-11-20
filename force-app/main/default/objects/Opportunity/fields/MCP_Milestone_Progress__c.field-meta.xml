@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MCP_Milestone_Progress__c</fullName>
+    <formula>IF(MCP_Milestones_Total__c = 0, 0, MCP_Milestones_Done__c / MCP_Milestones_Total__c)</formula>
+    <label>Milestone Progress %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MCP_Discount_Justification_Required</fullName>
+    <active>true</active>
+    <description>Discount % above 15 requires a Discount Justification.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(MCP_Discount_Percent__c)), MCP_Discount_Percent__c &gt; 0.15, ISBLANK(Discount_Justification__c))</errorConditionFormula>
+    <errorDisplayField>Discount_Justification__c</errorDisplayField>
+    <errorMessage>Discounts above 15% need a justification.</errorMessage>
+</ValidationRule>

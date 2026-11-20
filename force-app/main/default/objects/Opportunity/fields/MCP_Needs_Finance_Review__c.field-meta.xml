@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MCP_Needs_Finance_Review__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Set by the MCP discount governance flow when Discount % is above 30.</description>
+    <label>Needs Finance Review</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

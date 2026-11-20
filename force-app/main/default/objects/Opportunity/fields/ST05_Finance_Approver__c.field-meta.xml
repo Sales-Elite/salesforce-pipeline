@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ST05_Finance_Approver__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Step 2 approver, set from the ST05 Finance Approvers queue membership.</description>
+    <label>ST05 Finance Approver</label>
+    <referenceTo>User</referenceTo>
+    <relationshipLabel>Opportunities</relationshipLabel>
+    <relationshipName>ST05_Finance_Approver</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MCPN_Needs_Attention__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Set nightly by MCPN_StaleOpportunityBatch: true when an open Opportunity was last modified more than 30 days ago.</description>
+    <label>MCPN Needs Attention</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
