@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Next_Step_in_Negotiation</fullName>
+    <active>true</active>
+    <description>Requires Next Step in late stages. Users with Bypass Opportunity Validation custom permission are exempt.</description>
+    <errorConditionFormula>AND(OR(ISPICKVAL(StageName, &quot;Negotiation/Review&quot;), ISPICKVAL(StageName, &quot;Proposal/Price Quote&quot;)), ISBLANK(NextStep), NOT($Permission.Bypass_Opportunity_Validation))</errorConditionFormula>
+    <errorDisplayField>NextStep</errorDisplayField>
+    <errorMessage>Next Step is required when the Opportunity is in Proposal/Price Quote or Negotiation/Review.</errorMessage>
+</ValidationRule>

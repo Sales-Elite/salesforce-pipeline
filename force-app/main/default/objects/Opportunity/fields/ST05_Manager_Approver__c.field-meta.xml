@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ST05_Manager_Approver__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Step 1 approver. Set to the Owner&apos;s manager, or to a member of the ST05 Finance Approvers queue when the owner has no manager.</description>
+    <label>ST05 Manager Approver</label>
+    <referenceTo>User</referenceTo>
+    <relationshipLabel>Opportunities</relationshipLabel>
+    <relationshipName>ST05_Manager_Approver</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

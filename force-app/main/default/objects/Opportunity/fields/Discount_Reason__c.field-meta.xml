@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Discount_Reason__c</fullName>
+    <description>Reason for the discount; required by validation when Discount Percent &gt; 0.</description>
+    <label>Discount Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Competitive Pressure</fullName>
+                <default>false</default>
+                <label>Competitive Pressure</label>
+            </value>
+            <value>
+                <fullName>Strategic Account</fullName>
+                <default>false</default>
+                <label>Strategic Account</label>
+            </value>
+            <value>
+                <fullName>Volume Deal</fullName>
+                <default>false</default>
+                <label>Volume Deal</label>
+            </value>
+            <value>
+                <fullName>Renewal Retention</fullName>
+                <default>false</default>
+                <label>Renewal Retention</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
